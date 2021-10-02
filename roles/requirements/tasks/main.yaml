@@ -4,12 +4,6 @@
       name: curl
       state: present
 
-  - name: GIT KURULUMU
-    yum:
-      name: git
-      state: present
-      update_cache: yes
-
   - name: GOLANG 1.17.1 INDIR
     get_url:
       url: https://golang.org/dl/go1.17.1.linux-amd64.tar.gz

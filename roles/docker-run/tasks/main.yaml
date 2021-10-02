@@ -1,9 +1,9 @@
 ---
-#    - name: DOCKER GROUP ADD
-#      shell: "sudo groupadd docker"
+    - name: DOCKER PERMISSION
+      shell: "sudo chmod -R 777 /var/run/docker.sock"
 
-#    - name: DOCKER KULLANICI IZNI
-#      shell: "sudo usermod -aG docker $USER"
+    - name: DOCKER KULLANICI IZNI
+      shell: "sudo usermod -aG docker $USER"
 
 #    - name: NEWGRP DOCKER
 #      shell: "sudo newgrp docker"
